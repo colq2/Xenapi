@@ -40,9 +40,9 @@ class Xen
 	 * @param $user
 	 * @param $password
 	 */
-	public function __construct($url, $user, $password)
+	public function __construct(string $url, string $user, string $password)
 	{
-		if (!Validator::ip()->validate($url))
+		if (!Validator::url()->validate($url))
 		{
 			throw new \InvalidArgumentException("'url' value mast be an ipv4 address", 1);
 		}
