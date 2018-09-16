@@ -85,9 +85,9 @@ class Xen
 	/**
 	 * This returns the XenConnection object
 	 *
-	 * @return null|XenConnection
+	 * @return XenConnection
 	 */
-	public function getXenConnection()
+	public function getXenConnection(): XenConnection
 	{
 		return $this->xenConnection;
 	}

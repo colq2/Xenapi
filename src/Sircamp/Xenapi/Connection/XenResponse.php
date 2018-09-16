@@ -5,9 +5,9 @@ use ReflectionClass;
 class XenResponse
 {
 
-	private $Value;
-	private $Status;
-	private $ErrorDescription = array();
+	private $value;
+	private $status;
+	private $errorDescription = array();
 
 	public function __construct($args)
 	{
@@ -30,19 +30,19 @@ class XenResponse
 	 */
 	public function getValue()
 	{
-		return $this->Value;
+		return $this->value;
 	}
 
 	/**
 	 * Sets the value of Value.
 	 *
-	 * @param mixed $Value the value
+	 * @param mixed $value the value
 	 *
 	 * @return self
 	 */
-	public function _setValue($Value)
+	public function _setValue($value)
 	{
-		$this->Value = $Value;
+		$this->value = $value;
 
 		return $this;
 	}
@@ -54,7 +54,7 @@ class XenResponse
 	 */
 	public function getStatus()
 	{
-		return $this->Status;
+		return $this->status;
 	}
 
 	/**
@@ -66,7 +66,7 @@ class XenResponse
 	 */
 	private function _setStatus($Status)
 	{
-		$this->Status = $Status;
+		$this->status = $Status;
 
 		return $this;
 	}
@@ -78,7 +78,7 @@ class XenResponse
 	 */
 	public function getErrorDescription()
 	{
-		return $this->ErrorDescription;
+		return $this->errorDescription;
 	}
 
 	/**
@@ -90,7 +90,7 @@ class XenResponse
 	 */
 	private function _setErrorDescription($ErrorDescription)
 	{
-		$this->ErrorDescription = $ErrorDescription;
+		$this->errorDescription = $ErrorDescription;
 
 		return $this;
 	}
